@@ -1,7 +1,11 @@
+require('dotenv').config();
+const searchKey = process.env.SEARCH_KEY;
+const searchEndpoint = process.env.SEARCH_END;
 $(function () {
     $("#datepicker").datepicker();
 });
 function apiSearch() {
+    
     var params = {
         'q': $('#query').val(),
         'count': 50,
@@ -10,10 +14,10 @@ function apiSearch() {
     };
 
     $.ajax({
-        url: 'https://MY-API-ENDPOINT/v7.0/search?' + $.param(params),
+        url: searchEndpoint + $.param(params),
         type: 'GET',
         headers: {
-            'Ocp-Apim-Subscription-Key': 'MY-API-KEY'
+            'Ocp-Apim-Subscription-Key': searchKey
         }
     })
         .done(function (data) {
