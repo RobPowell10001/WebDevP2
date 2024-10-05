@@ -18,5 +18,47 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+    background-image: url(../images/mountains.jpg);
+    background-size: cover; /* make the image cover the entire background */
+    background-position: center; /* centers the image */
+}
+
+.central {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 250px;
+    text-align: center;
+    padding: 20px;
+    color:darkgreen;
+    
+}
+
+.searchbar {
+    width: 300px; /* Adjust width as needed */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: left; /* Centers the text inside the input */
+    font-size: 16px;
+}
+
+/*Set the visibility of the searchResults and time divs to hidden
+Style the rest of the page however you see fit. points will be lost if little or no effort is given in styling your site*/
+
+.results {
+    visibility: hidden;
+}
+
+.time {
+    font-size: 200px;
+    color: chartreuse;
+    visibility: hidden;
 }

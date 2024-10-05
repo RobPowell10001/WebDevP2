@@ -2,19 +2,18 @@
 <html lang="en">
 
 <head>
+    <title>big</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>  <!--Adds jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js" integrity="sha384-8EM386r8XMMzwGPUxfGNr6c1wIOYnPQBJ6VFxzKCZeklpQarHoZGB40kdNDA3gYr" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.7/themes/le-frog/jquery-ui.css" integrity="sha384-LKCLseUd8sjsrKtaFb/PVzugKx0k/FrkhraXbtxEMzht9cCFE1MJepCTAz31RJoX" crossorigin="anonymous"> <!--Adds jqueryui-->
-    <script>
-        if (typeof jQuery.ui == 'undefined') {
+    <script>if (typeof jQuery.ui == 'undefined') {
 
             console.log("UI is not loaded!");
         } else {
 
             console.log("loaded!");
-        }
-    </script>
-    <link rel="stylesheet" href="./css/style.css">
+        }</script>
+    <link rel="stylesheet" href="./css/site.css">
     <script type="text/javascript" src="./js/script.js"></script>
 </head>
 
@@ -27,6 +26,18 @@ An empty div with an ID of searchResults
 A second empty div with an ID of time-->
 
 <body>
+    <div class="central">
+        <h1 class="title">big.</h1>
+        <input id="query" class="searchbar" placeholder="big ideas?" />
+        <div class="buttons">
+            <p><input id="searchButton" class="ui-button ui-widget ui-corner-all" type="button" value="Search" ><input id="timeButton" class="ui-button ui-widget ui-corner-all" type="submit" value="big time."></p>
+        </div>
+        
+    </div>
+    <div id="searchResults" class="results">
+    </div>
+    <div id="time" class="time">
+    </div>
     
 
 </body>
